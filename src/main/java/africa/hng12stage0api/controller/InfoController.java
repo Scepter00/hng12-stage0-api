@@ -15,10 +15,10 @@ import java.util.Map;
 public class InfoController {
 
     @GetMapping
-    public Map<String, String> getInfo() {
+    public Map<String, String> getApiResponse() {
         Map<String, String> response = new HashMap<>();
         response.put("email", "chukwunenyeebuka@gmail.com");
-        response.put("current_datetime", Instant.now().atOffset(ZoneOffset.UTC).format(DateTimeFormatter.ISO_INSTANT));
+        response.put("current_datetime", Instant.now().atOffset(ZoneOffset.UTC).truncatedTo(java.time.temporal.ChronoUnit.SECONDS).format(DateTimeFormatter.ISO_INSTANT));
         response.put("github_url", "https://github.com/Scepter00/hng12-stage0-api.git");
 
         return response;
