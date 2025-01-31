@@ -1,7 +1,7 @@
 # HNG12 Stage 0 - Public API
 
 ## Description
-This is a simple public API for HNG12 Stage 0 backend task.
+This is a simple public API created as part of the HNG12 Stage 0 backend task. The API returns basic information, including the email used for registration, the current datetime in ISO 8601 format (UTC), and the GitHub URL of the project's codebase.
 
 ## Tech Stack
 - Java
@@ -33,26 +33,18 @@ To run this project locally, follow these steps:
 Clone the repository:
 
 bash
-Copy
-Edit
 git clone https://github.com/Scepter00/hng12-stage0-api.git
 Navigate to the project directory:
 
 bash
-Copy
-Edit
 cd hng12-stage0-api
 Build the project using Maven:
 
 bash
-Copy
-Edit
 mvn clean package
 Run the application:
 
 bash
-Copy
-Edit
 mvn spring-boot:run
 The API will be available at http://localhost:8080/.
 
