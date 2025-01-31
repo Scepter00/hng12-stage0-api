@@ -54,7 +54,7 @@ Maven: For project build and dependency management.
 Deployment
 This API is deployed to Railway and can be accessed publicly at:
 
-https://hng12-stage0-api-production-b29c.up.railway.app/api
+https://hng12-stage0-api-production-b29c.up.railway.app/
 
 Additional Information
 The current_datetime field is dynamically generated in ISO 8601 format (UTC) on every request. It uses Instant.now() from Java's java.time package to get the current time and then formats it into the desired format.
