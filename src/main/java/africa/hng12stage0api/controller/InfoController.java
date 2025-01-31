@@ -22,6 +22,5 @@ public class InfoController {
         response.put("github_url", "https://github.com/Scepter00/hng12-stage0-api.git");
 
         return response;
-
     }
 }
